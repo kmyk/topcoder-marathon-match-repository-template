@@ -1,5 +1,11 @@
 # a repository to use as a template for Topcoder Marathon Match
 
+## What is this
+
+参加するたびに以前の回の repo を漁って `Makefile` などをかき集めてきて環境構築をしていた。非効率だと思ったので整備した
+
+see also: <https://kimiyuki.net/blog/2018/11/22/tools-and-tips-for-marathon-matchs/>
+
 ## How to Initialize
 
 (requirements: skills of git and GitHub)
@@ -9,6 +15,7 @@
     1.  make your private repository on GitHub
     1.  replace `origin` of the cloned repo with it (`git remote remove origin` and `git remote add origin ${URL}`)
     1.  make directries for branches `documents` and `tools` (e.g. `git clone $(git remote get-url origin) --branch documents documents`)
+    1.  remove this `readme.md` (`git reset --hard empty`)
 1.  code
     1.  add the example code `FooBar.cpp` to `solution` branch
     1.  cut the part below `// -------8<------- end of solution submitted to the website -------8<-------` and paste as `main.cpp`
